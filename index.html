@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three.js 物理和天文可视化项目集</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: #1e88e5;
+            color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .intro {
+            font-size: 1.2em;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            text-align: center;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 330px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+        }
+        .card-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+        .solar-system {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+        }
+        .energy {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1601144513945-47f5620d1c6f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+        }
+        .neural {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1509228468518-180dd4864904?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+        }
+        .card-content {
+            padding: 20px;
+        }
+        .project-card h2 {
+            margin-top: 0;
+            color: #1e88e5;
+        }
+        .project-card p {
+            color: #666;
+            line-height: 1.5;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #1e88e5;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #1565c0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 20px;
+            color: #666;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Three.js 物理和天文可视化项目集</h1>
+    </header>
+    
+    <div class="container">
+        <div class="intro">
+            <p>这是一个使用 Three.js 开发的交互式 3D 可视化集合项目，旨在展示物理学概念和天文系统的工作原理。通过直观的 3D 模型和动画，帮助人们更好地理解抽象的科学概念。</p>
+        </div>
+        
+        <div class="projects">
+            <div class="project-card">
+                <div class="card-image solar-system"></div>
+                <div class="card-content">
+                    <h2>太阳系 3D 模拟</h2>
+                    <p>太阳系八大行星的交互式 3D 模型，包括真实纹理、轨道和自转。探索我们的太阳系，了解行星的相对大小和运动特性。</p>
+                    <a href="demo1/index.html" class="btn">查看演示</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="card-image energy"></div>
+                <div class="card-content">
+                    <h2>能量守恒定律可视化</h2>
+                    <p>通过小球在斜坡上的运动演示能量转换和守恒原理。直观展示势能与动能的相互转换过程，深入理解能量守恒定律。</p>
+                    <a href="energy-conservation/index.html" class="btn">查看演示</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="card-image neural"></div>
+                <div class="card-content">
+                    <h2>神经网络工作原理可视化</h2>
+                    <p>三层神经网络结构与信号传递过程的 3D 可视化。了解神经元之间如何连接和传递信息，探索人工智能的基本构建块。</p>
+                    <a href="neural-network/index.html" class="btn">查看演示</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2023 Three.js 物理和天文可视化项目集 | 基于 Three.js 构建</p>
+    </footer>
+</body>
+</html> 
