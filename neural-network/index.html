@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神经网络工作原理 3D 演示</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="info">
+            <h1>神经网络工作原理</h1>
+            <div class="legend">
+                <div class="legend-item"><span class="color input"></span> 输入层</div>
+                <div class="legend-item"><span class="color hidden"></span> 隐藏层</div>
+                <div class="legend-item"><span class="color output"></span> 输出层</div>
+                <div class="legend-item"><span class="line active"></span> 激活连接</div>
+                <div class="legend-item"><span class="line inactive"></span> 非激活连接</div>
+            </div>
+        </div>
+        <div id="canvas-container"></div>
+    </div>
+
+    <!-- Three.js库 -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/FontLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/geometries/TextGeometry.js"></script>
+    
+    <!-- 自定义脚本 -->
+    <script src="js/neuralNetwork.js"></script>
+</body>
+</html> 
